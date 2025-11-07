@@ -67,3 +67,6 @@ Desktop.ini
 personal-notes/
 private/
 TODO.personal.md
+# CLAUDE.md Microservice
+claude-md-microservice/node_modules/
+claude-md-microservice/package-lock.json
