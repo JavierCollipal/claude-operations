@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  claude-md-api:
+    build: .
+    container_name: claude-md-microservice
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    labels:
+      - "com.claude.service=claude-md-api"
+      - "com.claude.description=IMMUTABLE Rules Enforcement API"
+      - "com.claude.version=1.0.0"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - claude-network
+
+networks:
+  claude-network:
+    driver: bridge
+    name: claude-network
