@@ -1,0 +1,69 @@
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.*
+!.env.template
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# MongoDB dumps
+*.dump
+*.bson
+
+# Credentials and secrets
+credentials.json
+secrets.json
+*.key
+*.pem
+*.cert
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+
+# Personal notes
+personal-notes/
+private/
+TODO.personal.md

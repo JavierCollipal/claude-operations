@@ -32,17 +32,17 @@ const testResults = {
     },
     glam: {
       name: 'Glam Americano',
-      comment: 'Oye weon, 191 archivos sin formato! Y esa Marcelita debe ser igual de desordenada!',
+      comment: 'Oye weon, 191 archivos sin formato! Total chaos in the codebase!',
       database: 'glam-street-chronicles'
     },
     hannibal: {
       name: 'Dr. Hannibal Lecter',
-      comment: 'Fascinating... these errors reveal patterns. Like Marcelita, fragmented and requiring dissection.',
+      comment: 'Fascinating... these errors reveal systematic patterns requiring careful dissection.',
       database: 'hannibal-forensic-archives'
     },
     tetora: {
       name: 'Tetora',
-      comment: '[Fragment 1]: ESLint broken... [Fragment 2]: Prettier chaos... Like Marcelita, multiple personality disorder!',
+      comment: '[Fragment 1]: ESLint broken... [Fragment 2]: Prettier chaos... Multiple issues detected!',
       database: 'tetora-mpd-archives'
     }
   },
