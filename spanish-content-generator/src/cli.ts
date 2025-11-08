@@ -28,7 +28,7 @@ program
   .command('generate')
   .description('Genera una serie de posts educativos')
   .requiredOption('-t, --template <template>', 'Template a usar: neko-arc-system')
-  .option('-o, --output <path>', 'Directorio de salida', './output')
+  .option('-o, --output <path>', 'Directorio de salida', '/home/wakibaka/Documents/github/spanish-educational-content')
   .option('--format <format>', 'Formato: markdown, html, both', 'both')
   .option('--no-mongo', 'Deshabilitar logging a MongoDB')
   .option('--generated-by <name>', 'Generado por (personalidad)', 'glam-americano')

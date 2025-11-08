@@ -101,10 +101,12 @@ npm run generate -- list
 
 ## 📊 Ejemplo de Output
 
+**⚠️ IMPORTANTE (Rule 43)**: Todo el contenido generado va a `/home/wakibaka/Documents/github/spanish-educational-content/`
+
 Cuando ejecutas el generador, crea:
 
 ```
-output/
+/home/wakibaka/Documents/github/spanish-educational-content/
 └── neko-arc-ai-system-explained/
     ├── README.md              # Índice de la serie
     ├── post-01.md             # Post 1: Introducción
@@ -396,7 +398,6 @@ spanish-content-generator/
 │   ├── index.ts                      # Exports públicos
 │   └── templates/
 │       └── neko-arc-system.ts        # Template Neko-Arc
-├── output/                           # Contenido generado
 ├── dist/                             # JavaScript compilado
 ├── package.json                      # Dependencias
 ├── tsconfig.json                     # Config TypeScript
@@ -425,7 +426,7 @@ Este proyecto demuestra:
 
 Después de generar contenido:
 
-1. **Revisa los archivos** generados en `./output/`
+1. **Revisa los archivos** generados en `/home/wakibaka/Documents/github/spanish-educational-content/`
 2. **Edita si necesario** (son archivos Markdown estándar)
 3. **Publica** en tu plataforma favorita
 4. **Comparte** con la comunidad hispanohablante! 🎉

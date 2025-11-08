@@ -12,7 +12,7 @@ import { generateNekoArcSystemSeries } from './templates/neko-arc-system';
 export class ContentGenerator {
   private outputDir: string;
 
-  constructor(outputDir: string = './output') {
+  constructor(outputDir: string = '/home/wakibaka/Documents/github/spanish-educational-content') {
     this.outputDir = outputDir;
     this.ensureOutputDir();
   }
