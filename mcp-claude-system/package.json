@@ -1,0 +1,46 @@
+{
+  "name": "mcp-claude-system",
+  "version": "1.0.0",
+  "description": "🐾✨ MCP server for CLAUDE.md IMMUTABLE rules system with Six Personalities",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "mcp-claude-system": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "modelcontextprotocol",
+    "ai",
+    "llm",
+    "personalities",
+    "immutable-rules",
+    "neko-arc"
+  ],
+  "author": "Neko-Arc System",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JavierCollipal/claude-operations.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "*"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
