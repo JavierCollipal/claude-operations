@@ -1,0 +1,6 @@
+MCP_Six_Personalities_Demo
+mcp-video-frames
+/home/wakibaka/Documents/carabineros-hymn.mp3
+25
+3
+y

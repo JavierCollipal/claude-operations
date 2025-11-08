@@ -1,0 +1,261 @@
+{
+  "timestamp": "2025-11-08T02:59:16.086Z",
+  "summary": {
+    "totalTests": 24,
+    "passed": 21,
+    "failed": 3,
+    "successRate": 87.5,
+    "grade": "A"
+  },
+  "metrics": {
+    "functionality": [
+      {
+        "personality": "Neko-Arc",
+        "test": "greeting",
+        "status": "passed",
+        "time": 89
+      },
+      {
+        "personality": "Neko-Arc",
+        "test": "technical",
+        "status": "passed",
+        "time": 134
+      },
+      {
+        "personality": "Neko-Arc",
+        "test": "implementation",
+        "status": "passed",
+        "time": 116
+      },
+      {
+        "personality": "Mario Gallo Bestino",
+        "test": "performance",
+        "status": "passed",
+        "time": 64
+      },
+      {
+        "personality": "Mario Gallo Bestino",
+        "test": "theater",
+        "status": "passed",
+        "time": 54
+      },
+      {
+        "personality": "Mario Gallo Bestino",
+        "test": "creation",
+        "status": "passed",
+        "time": 112
+      },
+      {
+        "personality": "Noel",
+        "test": "analysis",
+        "status": "passed",
+        "time": 95
+      },
+      {
+        "personality": "Noel",
+        "test": "debug",
+        "status": "passed",
+        "time": 96
+      },
+      {
+        "personality": "Noel",
+        "test": "code_review",
+        "status": "passed",
+        "time": 61
+      },
+      {
+        "personality": "Glam Americano",
+        "test": "music",
+        "status": "passed",
+        "time": 96
+      },
+      {
+        "personality": "Glam Americano",
+        "test": "rock",
+        "status": "passed",
+        "time": 117
+      },
+      {
+        "personality": "Glam Americano",
+        "test": "ethics",
+        "status": "passed",
+        "time": 138
+      },
+      {
+        "personality": "Hannibal",
+        "test": "forensic",
+        "status": "passed",
+        "time": 132
+      },
+      {
+        "personality": "Hannibal",
+        "test": "psychology",
+        "status": "passed",
+        "time": 86
+      },
+      {
+        "personality": "Tetora",
+        "test": "identity",
+        "status": "passed",
+        "time": 123
+      },
+      {
+        "personality": "Tetora",
+        "test": "personality",
+        "status": "passed",
+        "time": 131
+      }
+    ],
+    "performance": [
+      {
+        "personality": "Neko-Arc",
+        "operation": "greeting",
+        "time": 89
+      },
+      {
+        "personality": "Neko-Arc",
+        "operation": "technical",
+        "time": 134
+      },
+      {
+        "personality": "Neko-Arc",
+        "operation": "implementation",
+        "time": 116
+      },
+      {
+        "personality": "Mario Gallo Bestino",
+        "operation": "performance",
+        "time": 64
+      },
+      {
+        "personality": "Mario Gallo Bestino",
+        "operation": "theater",
+        "time": 54
+      },
+      {
+        "personality": "Mario Gallo Bestino",
+        "operation": "creation",
+        "time": 112
+      },
+      {
+        "personality": "Noel",
+        "operation": "analysis",
+        "time": 95
+      },
+      {
+        "personality": "Noel",
+        "operation": "debug",
+        "time": 96
+      },
+      {
+        "personality": "Noel",
+        "operation": "code_review",
+        "time": 61
+      },
+      {
+        "personality": "Glam Americano",
+        "operation": "music",
+        "time": 96
+      },
+      {
+        "personality": "Glam Americano",
+        "operation": "rock",
+        "time": 117
+      },
+      {
+        "personality": "Glam Americano",
+        "operation": "ethics",
+        "time": 138
+      },
+      {
+        "personality": "Hannibal",
+        "operation": "forensic",
+        "time": 132
+      },
+      {
+        "personality": "Hannibal",
+        "operation": "analysis",
+        "time": 109
+      },
+      {
+        "personality": "Hannibal",
+        "operation": "psychology",
+        "time": 86
+      },
+      {
+        "personality": "Tetora",
+        "operation": "identity",
+        "time": 123
+      },
+      {
+        "personality": "Tetora",
+        "operation": "multiple",
+        "time": 131
+      },
+      {
+        "personality": "Tetora",
+        "operation": "personality",
+        "time": 131
+      },
+      {
+        "benchmark": "Response Time",
+        "results": {
+          "avg": 97.02,
+          "min": 51,
+          "max": 148
+        }
+      },
+      {
+        "benchmark": "Concurrent Requests",
+        "results": {
+          "totalTime": 143,
+          "requestCount": 6
+        }
+      }
+    ],
+    "usability": [
+      {
+        "feature": "Multi-perspective Analysis",
+        "status": "passed",
+        "time": 633
+      },
+      {
+        "feature": "Sequential Processing",
+        "status": "passed",
+        "time": 272
+      },
+      {
+        "feature": "Debate Simulation",
+        "status": "passed",
+        "time": 212
+      }
+    ],
+    "integration": [
+      {
+        "test": "MCP Protocol Compliance",
+        "status": "failed"
+      },
+      {
+        "test": "Tool Registration",
+        "status": "passed"
+      },
+      {
+        "test": "Configuration Format",
+        "status": "passed"
+      }
+    ],
+    "errors": [
+      {
+        "personality": "Hannibal",
+        "test": "analysis",
+        "error": "Expected quid_pro_quo, got Quid pro quo, Clarice... or should I say, wakibaka."
+      },
+      {
+        "personality": "Tetora",
+        "test": "multiple",
+        "error": "Expected which_me, got Which me is speaking now? The analyst? The helper?"
+      }
+    ]
+  },
+  "recommendations": []
+}
