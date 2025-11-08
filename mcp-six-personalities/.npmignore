@@ -1,0 +1,46 @@
+# Test files
+test.js
+*.test.js
+*.spec.js
+
+# Development files
+.eslintrc*
+.prettierrc*
+tsconfig.json
+
+# Scripts
+publish.sh
+install-mcp.sh
+
+# Documentation not needed in package
+NPM_ACCOUNT_GUIDE.md
+
+# Git files
+.git
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Build artifacts
+dist/
+build/
+*.tgz

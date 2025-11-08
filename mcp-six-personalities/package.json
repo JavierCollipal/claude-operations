@@ -1,0 +1,41 @@
+{
+  "name": "mcp-six-personalities",
+  "version": "1.0.0",
+  "description": "🎭✨ MCP server featuring six unique AI personalities for creative collaboration",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "mcp-six-personalities": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "ai",
+    "personalities",
+    "collaboration",
+    "creative",
+    "llm",
+    "claude",
+    "assistant",
+    "multi-perspective"
+  ],
+  "author": "Six Personalities Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YourUsername/mcp-six-personalities.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
