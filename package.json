@@ -24,10 +24,9 @@
   },
   "homepage": "https://github.com/JavierCollipal/claude-operations#readme",
   "dependencies": {
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.6.1",
     "mongodb": "^6.20.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=14.0.0"
   }
