@@ -1,0 +1,40 @@
+{
+  "name": "neko-medium-publisher",
+  "version": "1.0.0",
+  "description": "Neko-Arc AI-powered Medium publishing ability with MongoDB logging",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "publish-article": "ts-node src/cli.ts",
+    "test": "jest",
+    "validate": "tsc --noEmit"
+  },
+  "keywords": [
+    "medium",
+    "publishing",
+    "automation",
+    "neko-arc",
+    "ai",
+    "mongodb"
+  ],
+  "author": "Neko-Arc System",
+  "license": "MIT",
+  "dependencies": {
+    "medium-sdk-ts": "^0.2.0",
+    "mongodb": "^6.3.0",
+    "dotenv": "^16.3.1",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  }
+}

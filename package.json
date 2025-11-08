@@ -2,6 +2,7 @@
   "name": "claude-operations",
   "version": "1.0.0",
   "description": "Operational scripts and development tools for various software projects",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
