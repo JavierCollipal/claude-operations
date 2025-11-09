@@ -159,30 +159,30 @@ Ahora vamos a ver **CÓMO** funciona por dentro. 🔧
 
 ## 📐 Diagrama: Vista General del Sistema
 
-\`\`\`mermaid
-graph TB
-    User[👤 Usuario: wakibaka] --> Claude[🤖 Claude Code AI]
-    Claude --> CLAUDE_MD[📄 CLAUDE.md<br/>2000+ líneas de reglas]
-    CLAUDE_MD --> Personalities[🎭 6 Personalidades]
-
-    Personalities --> Neko[🐾 Neko-Arc]
-    Personalities --> Mario[🎭 Mario]
-    Personalities --> Noel[🗡️ Noel]
-    Personalities --> Glam[🎸 Glam]
-    Personalities --> Hannibal[🧠 Hannibal]
-    Personalities --> Tetora[🧠 Tetora]
-
-    Neko --> Tools[🛠️ Herramientas]
-    Tools --> Bash[💻 Terminal/Bash]
-    Tools --> Git[📦 Git/GitHub]
-    Tools --> MongoDB[💾 MongoDB Atlas]
-    Tools --> Puppeteer[🎭 Puppeteer]
-    Tools --> MCP[🔌 MCP Servers]
-
-    MongoDB --> DB1[neko-defense-system]
-    MongoDB --> DB2[marionnette-theater]
-    MongoDB --> DB3[glam-street-chronicles]
-    MongoDB --> DB4[hannibal-forensic-archives]
+\`\`\`
+                    👤 Usuario (wakibaka)
+                            ↓
+                    🤖 Claude Code AI
+                            ↓
+              📄 CLAUDE.md (2000+ líneas)
+                            ↓
+                  🎭 6 Personalidades
+                            ↓
+        ┌──────────┬────────┼────────┬──────────┬──────────┐
+        ↓          ↓        ↓        ↓          ↓          ↓
+    🐾 Neko   🎭 Mario  🗡️ Noel  🎸 Glam  🧠 Hannibal  🧠 Tetora
+        └──────────┴────────┴────────┴──────────┴──────────┘
+                            ↓
+                    🛠️ Herramientas
+                            ↓
+        ┌──────────┬────────┼────────┬──────────┐
+        ↓          ↓        ↓        ↓          ↓
+    💻 Bash   📦 Git  💾 MongoDB  🎭 Puppeteer  🔌 MCP
+                            ↓
+              ┌─────────────┼─────────────┬─────────────┐
+              ↓             ↓             ↓             ↓
+    neko-defense-   marionnette-   glam-street-   hannibal-
+        system         theater      chronicles   forensic-archives
 \`\`\`
 
 ## 🔍 Explicación Capa por Capa
@@ -215,41 +215,51 @@ graph TB
 
 ## 🔄 Diagrama: Flujo de Trabajo Típico
 
-\`\`\`mermaid
-sequenceDiagram
-    participant U as 👤 Usuario
-    participant N as 🐾 Neko-Arc
-    participant M as 🎭 Mario
-    participant DB as 💾 MongoDB
-    participant GH as 📦 GitHub
-
-    U->>N: "Automatiza esta tarea web"
-    N->>N: Lee CLAUDE.md<br/>Analiza requerimientos
-    N->>M: "Mario, necesito Puppeteer"
-    M->>M: Escribe código<br/>Crea automation script
-    M->>DB: Guarda evidencia
-    M->>GH: Commit & Push
-    M->>N: "Listo! Script funcional"
-    N->>U: "✅ Tarea completada!"
+\`\`\`
+👤 Usuario ────────────────────────────────────────────────┐
+  │                                                         │
+  │ 1. "Automatiza esta tarea web"                         │
+  ↓                                                         │
+🐾 Neko-Arc                                                 │
+  │                                                         │
+  │ 2. Lee CLAUDE.md + Analiza requerimientos              │
+  │                                                         │
+  │ 3. "Mario, necesito Puppeteer" ──────────→ 🎭 Mario    │
+  │                                              │          │
+  │                                              │ 4. Escribe código │
+  │                                              │    Crea automation │
+  │                                              │          │
+  │                                              │ 5. ───→ 💾 MongoDB
+  │                                              │          │
+  │                                              │ 6. ───→ 📦 GitHub
+  │                                              │          │
+  │ ←──────── 7. "Listo! Script funcional" ─────┘          │
+  │                                                         │
+  │ 8. "✅ Tarea completada!" ────────────────────────────→┘
 \`\`\`
 
 ## 💾 Arquitectura de Datos (MongoDB)
 
-\`\`\`mermaid
-graph LR
-    subgraph "MongoDB Atlas Cloud"
-        DB1[neko-defense-system<br/>Datos principales]
-        DB2[marionnette-theater<br/>Scripts Puppeteer]
-        DB3[glam-street-chronicles<br/>Contenido español]
-        DB4[hannibal-forensic-archives<br/>Análisis forenses]
-        DB5[neko-abilities<br/>Habilidades del sistema]
-    end
-
-    Apps[Aplicaciones] --> DB1
-    Apps --> DB2
-    Apps --> DB3
-    Apps --> DB4
-    Apps --> DB5
+\`\`\`
+              ☁️ MongoDB Atlas Cloud
+    ┌──────────────────────────────────────────┐
+    │                                          │
+    │  📁 neko-defense-system                  │ ←─┐
+    │     (Datos principales)                  │   │
+    │                                          │   │
+    │  📁 marionnette-theater                  │ ←─┤
+    │     (Scripts Puppeteer)                  │   │
+    │                                          │   │ 🖥️ Aplicaciones
+    │  📁 glam-street-chronicles               │ ←─┤
+    │     (Contenido español)                  │   │
+    │                                          │   │
+    │  📁 hannibal-forensic-archives           │ ←─┤
+    │     (Análisis forenses)                  │   │
+    │                                          │   │
+    │  📁 neko-abilities                       │ ←─┘
+    │     (Habilidades del sistema)            │
+    │                                          │
+    └──────────────────────────────────────────┘
 \`\`\`
 
 **¿Por qué MongoDB?**
@@ -260,37 +270,33 @@ graph LR
 
 ## 🛠️ Diagrama: Stack Tecnológico
 
-\`\`\`mermaid
-graph TB
-    subgraph "Frontend/Interface"
-        A[Claude Code CLI<br/>Terminal Interface]
-    end
-
-    subgraph "Backend/Logic"
-        B[TypeScript/JavaScript<br/>Código principal]
-        C[Node.js Runtime<br/>Ejecuta el código]
-        D[Python Scripts<br/>Tareas especiales]
-    end
-
-    subgraph "Storage"
-        E[MongoDB Atlas<br/>Base de datos]
-        F[GitHub Repos<br/>Control de versiones]
-    end
-
-    subgraph "External Services"
-        G[Puppeteer<br/>Automatización web]
-        H[MCP Servers<br/>Extensiones]
-        I[APIs<br/>Integraciones]
-    end
-
-    A --> B
-    B --> C
-    B --> D
-    C --> E
-    C --> F
-    C --> G
-    C --> H
-    C --> I
+\`\`\`
+┌─────────────────────────────────────────────────────────┐
+│            🖥️ FRONTEND / INTERFACE                      │
+│                                                         │
+│         Claude Code CLI (Terminal Interface)            │
+└────────────────────┬────────────────────────────────────┘
+                     ↓
+┌─────────────────────────────────────────────────────────┐
+│            ⚙️ BACKEND / LOGIC                           │
+│                                                         │
+│  TypeScript/JavaScript ──→ Node.js Runtime              │
+│  (Código principal)        (Ejecuta el código)          │
+│                       └──→ Python Scripts               │
+│                            (Tareas especiales)          │
+└────────────────────┬────────────────────────────────────┘
+                     ↓
+    ┌────────────────┼────────────────┐
+    ↓                ↓                ↓
+┌─────────┐   ┌──────────────┐   ┌───────────────┐
+│ STORAGE │   │   EXTERNAL   │   │   EXTERNAL    │
+│         │   │   SERVICES   │   │   SERVICES    │
+│ 💾 MongoDB   │ 🎭 Puppeteer │   │  🔌 MCP       │
+│    Atlas │   │ 🌐 APIs      │   │     Servers   │
+│         │   │              │   │               │
+│ 📦 GitHub│   │              │   │               │
+│    Repos │   │              │   │               │
+└─────────┘   └──────────────┘   └───────────────┘
 \`\`\`
 
 ## 🔑 Componentes Clave Explicados
@@ -504,19 +510,36 @@ ALWAYS create a feature branch, NEVER commit to main (IMMUTABLE!)
 
 ## 🎯 Diagrama: Jerarquía de Reglas
 
-\`\`\`mermaid
-graph TD
-    RULE0[⚡ RULE 0<br/>SUPREME IMMUTABILITY<br/>No rule can be changed] --> ALL[All 42 Rules]
-
-    ALL --> CAT1[Ubicación & Estructura<br/>Rules 1, 19, 29, 31, 32, 35]
-    ALL --> CAT2[Seguridad<br/>Rules 6, 11, 12, 36, 37]
-    ALL --> CAT3[Bases de Datos<br/>Rules 4, 14, 15]
-    ALL --> CAT4[Git & GitHub<br/>Rules 12, 26, 28, 41]
-    ALL --> CAT5[Desarrollo<br/>Rules 8, 9, 16, 17, 38]
-    ALL --> CAT6[Personalidades<br/>Rules 20-25, 27]
-
-    style RULE0 fill:#ff6b6b
-    style ALL fill:#4ecdc4
+\`\`\`
+                    ⚡ RULE 0 ⚡
+           SUPREME IMMUTABILITY LAW
+           (No rule can be changed)
+                        ↓
+              ┌─────────┴─────────┐
+              │   ALL 42 RULES    │
+              └─────────┬─────────┘
+                        ↓
+        ┌───────┬───────┼───────┬───────┬───────┐
+        ↓       ↓       ↓       ↓       ↓       ↓
+    ┌────────────────────────────────────────────────┐
+    │ 📁 Ubicación & Estructura                      │
+    │    Rules 1, 19, 29, 31, 32, 35                 │
+    ├────────────────────────────────────────────────┤
+    │ 🔒 Seguridad                                   │
+    │    Rules 6, 11, 12, 36, 37                     │
+    ├────────────────────────────────────────────────┤
+    │ 💾 Bases de Datos                              │
+    │    Rules 4, 14, 15                             │
+    ├────────────────────────────────────────────────┤
+    │ 📦 Git & GitHub                                │
+    │    Rules 12, 26, 28, 41                        │
+    ├────────────────────────────────────────────────┤
+    │ ⚙️ Desarrollo                                  │
+    │    Rules 8, 9, 16, 17, 38                      │
+    ├────────────────────────────────────────────────┤
+    │ 🎭 Personalidades                              │
+    │    Rules 20-25, 27                             │
+    └────────────────────────────────────────────────┘
 \`\`\`
 
 ## 🛡️ ¿Cómo Se Garantiza el Cumplimiento?
@@ -864,30 +887,24 @@ Categoría: Delitos Informáticos
 
 ## 🎯 Diagrama: Flujo de Casos de Uso
 
-\`\`\`mermaid
-graph TD
-    User[👤 Usuario] --> Request[Solicitud]
-
-    Request --> UC1[🕵️ Threat Hunting]
-    Request --> UC2[📝 Content Generation]
-    Request --> UC3[🤖 Web Automation]
-    Request --> UC4[🎥 Video Creation]
-    Request --> UC5[🔒 Security Audit]
-    Request --> UC6[⚖️ Legal RAG]
-
-    UC1 --> Result1[Reporte + Evidencia]
-    UC2 --> Result2[Serie de Posts]
-    UC3 --> Result3[Script Funcional]
-    UC4 --> Result4[Video .mp4]
-    UC5 --> Result5[Audit Report]
-    UC6 --> Result6[Artículos Legales]
-
-    Result1 --> MongoDB[💾 MongoDB]
-    Result2 --> MongoDB
-    Result3 --> GitHub[📦 GitHub]
-    Result4 --> Files[📁 Files]
-    Result5 --> MongoDB
-    Result6 --> MongoDB
+\`\`\`
+                    👤 Usuario
+                        ↓
+                    Solicitud
+                        ↓
+        ┌───────┬───────┼───────┬───────┬───────┐
+        ↓       ↓       ↓       ↓       ↓       ↓
+    🕵️ Threat  📝 Content  🤖 Web    🎥 Video  🔒 Security  ⚖️ Legal
+     Hunting   Generation  Automation Creation  Audit      RAG
+        ↓         ↓         ↓         ↓         ↓         ↓
+    Reporte   Serie de   Script    Video     Audit     Artículos
+      +       Posts      Funcional  .mp4     Report    Legales
+    Evidencia
+        ↓         ↓         ↓         ↓         ↓         ↓
+        │         │         │         │         │         │
+        └────┬────┴────┬────┴────┬────┴────┬────┴─────────┘
+             ↓         ↓         ↓         ↓
+        💾 MongoDB  💾 MongoDB  📦 GitHub  📁 Files
 \`\`\`
 
 ## 💡 ¿Qué Tienen en Común Todos Estos Casos?
