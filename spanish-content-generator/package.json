@@ -9,6 +9,7 @@
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "generate": "ts-node src/cli.ts",
+    "idea": "ts-node src/idea-cli.ts",
     "validate": "tsc --noEmit"
   },
   "keywords": [
