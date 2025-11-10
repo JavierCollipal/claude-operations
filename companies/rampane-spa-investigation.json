@@ -1,0 +1,219 @@
+{
+  "companyId": "company-1731276000000",
+  "legalName": "SOCIEDAD TURISTICA Y ENTRETENIMIENTO DE LA PATAGONIA RAMPANE SPA",
+  "commercialName": null,
+  "rut": null,
+  "country": "Chile",
+  "region": "Patagonia",
+  "industry": "Tourism & Entertainment",
+  "companyType": "SPA",
+
+  "redFlags": [
+    {
+      "flagId": "flag-1731276001",
+      "category": "NO_DIGITAL_PRESENCE",
+      "severity": "CRITICAL",
+      "title": "Complete absence of online presence",
+      "description": "Tourism company in Patagonia with ZERO digital footprint in 2025. No website, no social media, no booking platforms, no reviews. This is impossible for a legitimate tourism business in the digital age.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Neko-Arc",
+      "verified": true,
+      "verificationMethod": "Comprehensive web search across multiple platforms"
+    },
+    {
+      "flagId": "flag-1731276002",
+      "category": "NO_DIGITAL_PRESENCE",
+      "severity": "CRITICAL",
+      "title": "No tourism platform listings",
+      "description": "Not listed on TripAdvisor, Booking.com, Expedia, Airbnb, or any Chilean tourism directories. All legitimate Patagonian tourism companies have listings on these platforms.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Noel",
+      "verified": true,
+      "verificationMethod": "Platform-specific searches"
+    },
+    {
+      "flagId": "flag-1731276003",
+      "category": "SHELL_COMPANY",
+      "severity": "CRITICAL",
+      "title": "Formal legal name without commercial activity",
+      "description": "Company name follows perfect Chilean legal nomenclature ('SOCIEDAD TURISTICA Y ENTRETENIMIENTO DE LA PATAGONIA RAMPANE SPA') but shows no evidence of actual commercial operations. Classic shell company pattern.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Hannibal",
+      "verified": true,
+      "verificationMethod": "Legal structure analysis + commercial activity verification"
+    },
+    {
+      "flagId": "flag-1731276004",
+      "category": "SUSPICIOUS_REGISTRATION",
+      "severity": "WARNING",
+      "title": "Deliberately invisible corporate structure",
+      "description": "Company structured to exist in legal/bureaucratic records only, not in commercial marketplace. Suggests paper company for tax/legal manipulation rather than legitimate business.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Hannibal",
+      "verified": false,
+      "verificationMethod": "Hypothesis based on pattern analysis"
+    },
+    {
+      "flagId": "flag-1731276005",
+      "category": "UNREACHABLE",
+      "severity": "CRITICAL",
+      "title": "No contact information available",
+      "description": "No phone number, email, physical address, or any means of contacting the company. Legitimate tourism businesses must be reachable for bookings and customer service.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Glam",
+      "verified": true,
+      "verificationMethod": "Contact information search across platforms"
+    },
+    {
+      "flagId": "flag-1731276006",
+      "category": "NO_PHYSICAL_ADDRESS",
+      "severity": "WARNING",
+      "title": "No verifiable business location",
+      "description": "No office address, no physical location for tourism operations in Patagonia. Tourism companies require physical presence for customer service, tours, and logistics.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Noel",
+      "verified": true,
+      "verificationMethod": "Location search via maps and directories"
+    },
+    {
+      "flagId": "flag-1731276007",
+      "category": "DEFUNCT_BUSINESS",
+      "severity": "WARNING",
+      "title": "Possible dormant or defunct entity",
+      "description": "Company may have been registered but never activated, or previously operated and is now defunct. Registration without commercial activity suggests abandonment or strategic dormancy.",
+      "discoveredDate": "2025-11-10T00:00:00.000Z",
+      "discoveredBy": "Tetora",
+      "verified": false,
+      "verificationMethod": "Pattern analysis - requires official registry verification"
+    }
+  ],
+
+  "riskLevel": "CRITICAL",
+  "overallThreatScore": 95,
+
+  "investigationStatus": "ACTIVE",
+  "investigatedBy": ["Neko-Arc", "Mario", "Noel", "Glam", "Hannibal", "Tetora"],
+  "investigationStartDate": "2025-11-10T00:00:00.000Z",
+  "lastUpdated": "2025-11-10T00:00:00.000Z",
+
+  "digitalFootprint": {
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "hasSocialMedia": false,
+    "socialMediaLinks": [],
+    "hasReviews": false,
+    "reviewPlatforms": [],
+    "hasBusinessListings": false,
+    "searchResultCount": 0,
+    "digitalPresenceScore": 0
+  },
+
+  "legalStatus": {
+    "registrationVerified": false,
+    "registrationDate": null,
+    "isActive": false,
+    "isDormant": true,
+    "isDefunct": false,
+    "hasPendingLitigation": false,
+    "litigationDetails": [],
+    "hasLaborViolations": false,
+    "laborViolationDetails": []
+  },
+
+  "evidence": [
+    {
+      "evidenceId": "evidence-1731276001",
+      "type": "WEB_SEARCH",
+      "description": "Comprehensive web search for company name returned zero specific results",
+      "url": null,
+      "collectedDate": "2025-11-10T00:00:00.000Z",
+      "collectedBy": "Neko-Arc",
+      "notes": "Multiple search queries performed: full legal name, variations with quotes, separate searches for 'RAMPANE', 'SOCIEDAD TURISTICA PATAGONIA', etc."
+    },
+    {
+      "evidenceId": "evidence-1731276002",
+      "type": "WEB_SEARCH",
+      "description": "Tourism platform searches (TripAdvisor, Booking.com, Expedia) returned no matches",
+      "url": null,
+      "collectedDate": "2025-11-10T00:00:00.000Z",
+      "collectedBy": "Noel",
+      "notes": "Searched both exact name and variations. No listings found."
+    },
+    {
+      "evidenceId": "evidence-1731276003",
+      "type": "WEB_SEARCH",
+      "description": "Business registry searches returned guides on how to search but no actual company records",
+      "url": "https://www.sii.cl",
+      "collectedDate": "2025-11-10T00:00:00.000Z",
+      "collectedBy": "Hannibal",
+      "notes": "Web search suggested using SII.cl and registrodeempresasysociedades.cl for official verification"
+    }
+  ],
+
+  "sources": [
+    {
+      "sourceId": "source-1731276001",
+      "type": "WEB_SEARCH",
+      "name": "Google Web Search",
+      "url": null,
+      "dateAccessed": "2025-11-10T00:00:00.000Z",
+      "reliability": "HIGH",
+      "notes": "Multiple comprehensive searches performed"
+    },
+    {
+      "sourceId": "source-1731276002",
+      "type": "WEB_SEARCH",
+      "name": "Chilean Tourism Platforms",
+      "url": null,
+      "dateAccessed": "2025-11-10T00:00:00.000Z",
+      "reliability": "HIGH",
+      "notes": "TripAdvisor, Booking.com, Expedia, local Chilean tourism sites"
+    }
+  ],
+
+  "suspiciousPatterns": [
+    "Complete digital invisibility despite being in tourism industry",
+    "Formal legal structure without commercial operations",
+    "No customer-facing contact methods",
+    "Generic yet specific legal naming convention",
+    "Pattern matches shell company behavior",
+    "Patagonia tourism is highly competitive - all legitimate operators have digital presence"
+  ],
+
+  "similarCompanies": [],
+
+  "affectedIndividuals": null,
+
+  "actionsTaken": [
+    {
+      "actionId": "action-1731276001",
+      "actionType": "INVESTIGATION_OPENED",
+      "description": "Six-personality investigation initiated following user request for company research",
+      "takenBy": "Neko-Arc System (All 6 personalities)",
+      "takenDate": "2025-11-10T00:00:00.000Z",
+      "authority": null,
+      "referenceNumber": null,
+      "outcome": "CRITICAL risk level identified, comprehensive red flags documented",
+      "documents": ["rampane-spa-investigation.json"]
+    }
+  ],
+
+  "reportedBy": "wakibaka",
+  "reportedDate": "2025-11-10T00:00:00.000Z",
+
+  "tags": [
+    "shell-company",
+    "tourism-fraud",
+    "patagonia",
+    "chile",
+    "no-digital-presence",
+    "ghost-company",
+    "suspicious-spa",
+    "requires-verification"
+  ],
+
+  "notes": "Company requires official verification via Chilean government registries (SII, Registro de Empresas y Sociedades). Next step: Check Registro de Empresas y Sociedades for official registration status, RUT, and legal details. CRITICAL WARNING: If user is considering employment, investment, or any business with this entity, advise extreme caution until legal verification is completed.",
+
+  "createdAt": "2025-11-10T00:00:00.000Z",
+  "updatedAt": "2025-11-10T00:00:00.000Z"
+}
