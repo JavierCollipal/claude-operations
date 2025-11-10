@@ -1,0 +1,64 @@
+# Environment files
+.env
+.env.*
+!.env.template
+
+# Secrets and credentials
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Development files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Documentation (keep README.md)
+docs/
+*.md
+!README.md
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# NPM
+node_modules/
+package-lock.json
+
+# Audit and scripts not for distribution
+security-audit-pre-npm.js
+save-*.js
+save-*.cjs
+verify-*.js
+verify-*.cjs
+create-*.cjs
+neko-dashboard-backend-audit.js
+
+# Android security (not for NPM)
+*.sh
+
+# Video/media files
+*.mp4
+*.png
+*.jpg
+
+# Research/documentation
+*-RESEARCH-*.md
+*-AUDIT-*.md
+*-REPORT.md
